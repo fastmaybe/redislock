@@ -6,11 +6,14 @@ package com.redis.fast.zklock.commonlock;
  */
 public abstract class AbstractLockImpl implements Lock{
 
+
     @Override
     public void lock() {
-
+        if (!tryLock()) {
+            waitLock();
+            lock();
+        }
     }
-
 
     /**
      * 尝试拿锁
