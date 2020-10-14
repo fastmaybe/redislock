@@ -26,4 +26,7 @@ public abstract class AbstractLockImpl implements Lock{
      */
     public abstract void waitLock();
 
+    public void close(){
+
+    }
 }

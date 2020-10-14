@@ -2,7 +2,6 @@ package com.redis.fast.zklock.commonlock;
 
 import org.I0Itec.zkclient.IZkDataListener;
 import org.I0Itec.zkclient.ZkClient;
-import org.springframework.util.StringUtils;
 
 import java.util.Collections;
 import java.util.List;
@@ -97,4 +96,6 @@ public class DistributeLock extends AbstractLockImpl {
         zkClient.delete(currentPath);
         zkClient.close();
     }
+
+
 }
