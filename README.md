@@ -27,3 +27,9 @@
     ReentrantZKLock2.java
  
 以上三个包下有可重入锁以及demo 
+
+### java demo
+- atomic      =>   com.redis.fast.study.atomic
+- valatile     => com.redis.fast.study.valatile
+- queue DIY =>  com.redis.fast.queue.diy
+- limit限流  => semaphore=>    com.redis.fast.limit.semaphore
